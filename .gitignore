@@ -1,0 +1,31 @@
+# Node Dependencies
+node_modules/
+*/node_modules/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*/.env
+*/.env.*
+!*.env.example
+
+# Production Builds
+dist/
+build/
+*/dist/
+*/build/
+
+# Logs & Temp
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.gemini/

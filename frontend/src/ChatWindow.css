@@ -1,0 +1,174 @@
+.chatWindow {
+  background-color: #212121;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.navBrand {
+  margin: 0.5rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ececec;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.navBrand:hover {
+  opacity: 0.85;
+}
+
+.navRight {
+  margin: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navGuestActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navLoginBtn {
+  background-color: #10a37f;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.navLoginBtn:hover {
+  background-color: #0e8c6d;
+}
+
+.navSignupBtn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.navSignupBtn:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.userIcon {
+  margin: 0;
+}
+
+.userIconDiv {
+  background-color: #0d9488;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+/* chatInput */
+.chatInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0.8rem 1rem;
+  box-sizing: border-box;
+}
+
+.userBox {
+  width: 100%;
+  position: relative;
+  max-width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.userBox input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #2f2f2f;
+  padding: 14px 50px 14px 22px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 26px;
+  color: #ffffff;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.userBox input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.userBox input::placeholder {
+  color: #8e8e8e;
+  font-size: 0.98rem;
+}
+
+#submit {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #171717;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+#submit:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.Info {
+  font-size: 0.78rem;
+  padding: 0.45rem 0 0 0;
+  color: #8e8e8e;
+  margin: 0;
+}
